@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "portTwo",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "portTwo"
+  }
+}

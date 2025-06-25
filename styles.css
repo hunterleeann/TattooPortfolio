@@ -1,0 +1,359 @@
+@font-face {
+  font-family: CarliFont;
+  src: url(MadhouseSans-9LWy.otf);
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.listItems {
+  color: white;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.bookNowBottomLink {
+  color: inherit;
+  text-decoration: none;
+  font-size: 55px;
+  text-shadow: 2px 2px #00b6cf;
+  font-family: CarliFont;
+  padding-top: 0; 
+}
+
+.FormNavBar {
+  list-style: none;
+  font-family: CarliFont;
+  word-spacing: 3px;
+  gap: 15px;
+  color: white;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  position: absolute;
+  top: 23px;
+}
+
+h1:not(.bookNowBottomLink) {
+  font-size: 55px;
+  text-shadow: 2px 2px #00b6cf;
+  font-family: CarliFont;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 40px;
+}
+/* This is for screens bigger than 550px 1360px  1200px 1000px*/
+@media only screen and (max-width: 700px) {
+  .bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/IMG_3049.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1; /* behind everything */
+  }
+  /* body {
+  background-image: url("/IMG_3049.jpeg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+} */
+
+  /* .backgroundImg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+} */
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 35px;
+  }
+
+  .resize {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  .imageList {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .productBox {
+    position: relative;
+    background-color: transparent;
+    border: 5px solid #00b6cf;
+    padding: 0.8rem;
+    margin: auto;
+    justify-self: center;
+  }
+
+  .productBox:hover {
+    background-color: #00b6cf;
+    transition: 0.4s;
+    transition-timing-function: ease-in;
+  }
+
+  .instaLogo {
+    display: none;
+    visibility: hidden;
+  }
+
+  .headerCont {
+    position: relative;
+    height: 111px;
+    display: flex;
+    align-items: flex-start;
+    /* padding-left: 25px; */
+    padding-right: 25px;
+    /* padding-bottom: 50px;  */
+    padding-bottom: 20%;
+  }
+
+  .navBarItems {
+    list-style: none;
+    font-family: CarliFont;
+    word-spacing: 3px;
+    gap: 15px;
+    color: white;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 23px;
+  }
+
+  .logo {
+    /* width: 60%;
+  height: 50%;  */
+    width: 60vw;
+    height: 15vh;
+    padding-top: 18px;
+  }
+
+  .headerCont a {
+    color: white;
+    text-decoration: none;
+    /* font-size: 40px; */
+    font-size: 5vh;
+  }
+
+  a:hover {
+    color: #00b6cf;
+  }
+
+  .aboutMeSection {
+    color: white;
+  }
+
+  .aboutMe {
+    display: inline;
+    position: relative;
+    padding-right: 22px;
+  }
+  .bottomLogo {
+    width: 3rem;
+  }
+
+  .aboutMeTxt {
+    font-size: 20px;
+    line-height: 2;
+    position: relative;
+    top: -0.5em;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .contactRow {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: larger;
+    flex-direction: column;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10%;
+  }
+
+  .emailLink {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/* Ends here  */
+
+/* @media only screen and (min-width: 550px) and (max-width: 740px) {*/
+
+@media only screen and (min-width: 701px) {
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 22rem));
+    /* grid-auto-columns: auto; 
+    grid-auto-rows: auto;  */
+    grid-gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .productBox {
+    position: relative;
+    background-color: transparent;
+    border: 5px solid #00b6cf;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 0;
+  }
+  .productBox:hover {
+    background-color: #00b6cf;
+    transition: 0.4s;
+    transition-timing-function: ease-in;
+  }
+
+  .resize {
+    width: 200px;
+    height: 268px;
+  }
+  .bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/IMG_3049.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1; /* behind everything */
+  }
+  /* body {
+    background-image: url("/IMG_2575.JPG");
+    background-attachment: fixed;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+  } */
+
+  .navBarItems {
+    list-style: none;
+    word-spacing: 3px;
+    font-family: CarliFont;
+    gap: 20px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    /* top: 30px; */
+    top: 50px;
+  }
+
+  .logo {
+    width: 500px;
+    /* width: 50vw;
+    height: 15vh; */
+    padding-top: 5px;
+  }
+
+  .headerCont {
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+  }
+  .headerCont a {
+    color: white;
+    text-decoration: none;
+    /* font-size: 50px; */
+    font-size: 6vh;
+  }
+
+  a:hover {
+    color: #00b6cf;
+  }
+
+  .instaLogo {
+    width: 2.5rem;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  .aboutMeTxt {
+    font-size: 30px;
+    line-height: 2;
+    position: relative;
+    top: -0.5em;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .aboutMeSection {
+    color: white;
+  }
+
+  .aboutMe {
+    display: inline;
+    position: relative;
+    padding-right: 22px;
+  }
+  .bottomLogo {
+    width: 4rem;
+  }
+
+  .contactRow {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: larger;
+    flex-direction: column;
+    font-size: 35px;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10%;
+  }
+
+  .emailLink {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+  }
+}
