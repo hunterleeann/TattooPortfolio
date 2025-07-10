@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="PortfolioNavGrid"> 
+        <div class="headerCont" style="background-color: rgba(0, 0, 0, 0.5) !important;"> 
+                <a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="IMG_3165.PNG"></a>
+        <div class="logo"><img src="IMG_3162.png" width="100%" height="111"></div> 
+        <button class="menuButton" id="menu-button" onclick=showSidebar()><img src="menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" 
+            width="55"> </button> 
+    <nav class="navBar"> 
+    <ul class="sidebar" id="menu-toggle"> 
+<li onclick="hideSidebar()"><a href="#"><img src="close_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50" width="50"></a></li> 
+<li><a href="/">Home</a></li>
+<li><a href="portfolio.html" >Portfolio</a></li> 
+<li><a href="#about" style="color: #00b6cf">Flash</a></li> 
+<li><a href="#contact">Art Gallery</a></li> 
+<li><a href="BookingForm.html">Booking Request</a></li>  
+    </ul>
+</nav>
+</div>
+</header> 
+
+<div class="bg-image"></div>
+<div class="imageList" id="gallery">
+  <div class="images">
+    <div class="productBox">
+      <img src="public/Flash/IMG_3136.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3135.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3134.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3128.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3133.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3132.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3127.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3131.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3126.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3124.jpeg"
+        class="resize"
+      />
+    </div>
+    <!-- <div class="productBox"> <img src="public/IMG_2469.png" class="resize"></div> -->
+    <div class="productBox">
+      <img src="public/Flash/IMG_3123.jpeg" class="resize" height="268" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3125.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3122.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3121.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3120.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img
+        src="public/Flash/IMG_3119.jpeg"
+        class="resize"
+      />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3118.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3130.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3117.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+      <img src="public/Flash/IMG_3116.jpeg" class="resize" />
+    </div>
+    <div class="productBox">
+        <img src="public/Flash/IMG_3115.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3113.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3112.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3129.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3103.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3104.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3108.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3109.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3105.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3106.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3107.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3110.jpeg" class="resize" />
+      </div>
+      <div class="productBox">
+        <img src="public/Flash/IMG_3111.jpeg" class="resize" />
+      </div>
+  </div>
+</div> 
+
+<script> 
+    const sidebar = document.querySelector('.sidebar') 
+    const isVisible = sidebar.style.display === 'flex';
+    
+        function showSidebar(){
+            sidebar.style.display = 'flex' 
+            // document.addEventListener('click', hideSidebar());
+            
+        } 
+    
+        function hideSidebar(){
+            sidebar.style.display = 'none' 
+    
+        }
+    
+      
+    
+    
+    </script>
+</body>
+</html>
+
+</body>
+</html>

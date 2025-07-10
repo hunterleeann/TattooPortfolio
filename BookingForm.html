@@ -7,12 +7,46 @@
     <title>Document</title>
 </head>
 <body> 
+    <!-- <button class="menuButton" id="menu-button" onclick=showSidebar()><img src="menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" 
+        width="55" > </button> 
+    <nav class="navBar"> 
+        <ul class="sidebar" id="menu-toggle"> 
+    <li onclick="hideSidebar()"><a href="#"><img src="close_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50" width="50"></a></li> 
+    <li><a href="#" style="color: #00b6cf">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li> 
+    <li><a href="flash.html">Flash</a></li> 
+    <li><a href="#contact">Art Gallery</a></li> 
+    <li><a href="BookingForm.html">Booking Request</a></li>  
+        </ul>
+    </nav> -->
     <nav class="navBar">
 <ul class="FormNavBar">
         <li ><a class="listItems" href="index.html">Home</a></li>
-        <li ><a class="listItems" href="index.html#contact">Contact</a></li>
+        <li><a class="listItems" href="flash.html">Flash</a></li> 
+        <li><a class="listItems" href="#contact">Gallery</a></li> 
+        <li ><a class="listItems" href="portfolio.html">Portfolio</a></li> 
     </ul>
     </nav>
     <script type="text/javascript" src="https://form.jotform.com/jsform/251751523323147"></script> 
+
+    <script> 
+        const sidebar = document.querySelector('.sidebar') 
+        const isVisible = sidebar.style.display === 'flex';
+        
+            function showSidebar(){
+                sidebar.style.display = 'flex' 
+                // document.addEventListener('click', hideSidebar());
+                
+            } 
+        
+            function hideSidebar(){
+                sidebar.style.display = 'none' 
+        
+            }
+        
+          
+        
+        
+        </script>
 </body>
 </html>

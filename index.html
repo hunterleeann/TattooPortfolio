@@ -6,60 +6,37 @@
     <title>TatsbyCarli</title>
     <link rel="stylesheet" href="styles.css"> 
     <link rel="javascript" href="BookingForm.js"> 
-    <!-- <link rel="javascript" href="script.js">  -->
-    <link rel="icon" href="/public/IMG_2574.PNG">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <link rel="icon" href="/public/IMG_2574.PNG"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <style>  
+    .MenuItems {  background-color: black;
+            width: 100%;} 
+    </style>
+</head> 
 
-<body>
+<body> 
+    <link rel="prefetch" href="portfolio.html"> 
     <div class="bg-image"></div> 
     <script>console.log("I love you <3, -H ")</script>
-    <script src="script.js" defer></script>
     <div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: -142px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 15503.5px; width: 444px;"></div> 
     <header class="navGrid"> 
         <div class="headerCont" style="background-color: rgba(0, 0, 0, 0.5) !important;"> 
-            <!-- <div class="socialContact" > -->
-                <a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="public/IMG_2578.PNG"></a>
-                <!-- </div> -->
+                <a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="IMG_3165.PNG"></a>
         <div class="logo"><img src="public/IMG_2574.PNG" width="100%"></div> 
-        <button class="menuButton" id="menu-toggle"><img src="MenuLogo.png" 
-            > </button> 
+        <button class="menuButton" id="menu-button" onclick=showSidebar()><img src="menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" 
+            width="55"> </button> 
     <nav class="navBar"> 
-    <!-- <ul class="navBarItems">  -->
-    <!-- <ul class="MenuItems" class="MenuItemsTest"> 
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="#about">Flash</a></li> 
+    <ul class="sidebar" id="menu-toggle"> 
+<li onclick="hideSidebar()"><a href="#"><img src="close_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50" width="50"></a></li> 
+<li><a href="#" style="color: #00b6cf">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li> 
+<li><a href="flash.html">Flash</a></li> 
 <li><a href="#contact">Art Gallery</a></li> 
-<li><a href="BookingForm.html">Booking Request</a></li>   -->
+<li><a href="BookingForm.html">Booking Request</a></li>  
     </ul>
 </nav>
 </div>
 </header> 
-
-    <!-- <div class="imageList" id="gallery">
-    <div class="images">
-        <div class="productBox"> <img src="public/IMG_2469.png" class="resize"></div>
-    <div class="productBox"><img src="public/IMG_0290.jpg"class="resize"> </div>
-        <div class="productBox"> <img src="public/IMG_0291.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_2540.png" class="resize"></div>
-        <div class="productBox"><img src="public/IMG_0293.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_2224.png" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_0295.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/Screenshot 2025-03-12 at 5.15.12 PM.png" class="resize"></div>
-        <div class="productBox"> <img src="public/Screenshot 2025-03-12 at 5.15.24 PM.png" class="resize"></div>
-        <div class="productBox"> <img src="public/Screenshot 2025-03-12 at 5.15.39 PM.png" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_0289.jpg" class="resize" height="268"></div>
-        <div class="productBox"> <img src="public/IMG_0297.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/A71FD457-4891-4B0C-B8BC-81504C5494BC.JPG" class="resize"></div>
-        <div class="productBox"> <img src="public/803E285D-A002-4656-AF1C-6EC2D3222A94.JPG" class="resize"></div>
-        <div class="productBox"> <img src="public/A5CC4E63-8D52-466C-AC89-ED4CF5883A82.JPG" class="resize"></div>
-        <div class="productBox"> <img src="public/Screenshot 2025-06-24 at 12.43.50 PM.png" class="resize"></div> 
-        <div class="productBox"> <img src="public/IMG_0309.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_0310.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_0311.jpg" class="resize"></div>
-        <div class="productBox"> <img src="public/IMG_0314.jpg" class="resize"></div>
-    </div>
-</div> -->
 
 <div><img src="IMG_3157.PNG" width="75%" class="homePageImg" ></div>
         
@@ -76,27 +53,10 @@
     
             <div class="NavListBottom">
             <ul class="bottomNavBar"> 
-                <!-- <button class="menuButton"><img src="MenuLogo.png" width="50%"> </button>  -->
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="#about">Flash</a></li>
+        <li><a href="flash.html">Flash</a></li>
         <li><a href="#contact">Art Gallery</a></li> 
         <li><a href="BookingForm.html">Booking Request</a></li>  </div>
-
-        <!-- <div><h1><a class="bookNowBottomLink" href="BookingForm.html">Book Now</a></h1></div> -->
-
-<!-- <div class="contactPortion" >
-<h1 id="contact" class="contactTitle">Contact</h1>
-<div class="contactRow">
-<div  class="contact" >
-<h3>Email</h3>
-<p><a class="emailLink" href="mailto:tatsbycarli@gmail.com" target="_blank">Tatsbycarli@gmail.com</a></p>
-</div>
-<div class="socialContact" >
-<h3>Social</h3>
-<a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="public/IMG_2578.PNG"></a>
-</div>
-</div>
-</div> -->
 </div>
 </div>
 </section> 
@@ -104,15 +64,55 @@
 <div class="contactPortion" >
     <h1 id="contact" class="contactTitle">Contact</h1>
     <div class="contactRow">
-    <!-- <div  class="contact" > -->
-    <!-- <h3>Email</h3> -->
     <p><a class="emailLink" href="mailto:tatsbycarli@gmail.com" target="_blank">Tatsbycarli@gmail.com</a></p>
-    <!-- </div> -->
     <div class="socialContact" >
     <a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="public/IMG_2578.PNG"></a>
     </div>
     </div>
     </div>
+
+<script> 
+const sidebar = document.querySelector('.sidebar') 
+const isVisible = sidebar.style.display === 'flex';
+
+    function showSidebar(){
+        sidebar.style.display = 'flex' 
+        // document.addEventListener('click', hideSidebar());
+        
+    } 
+
+    function hideSidebar(){
+        sidebar.style.display = 'none' 
+
+    }
+
+  
+
+
+</script>
+
+<link rel="preload" href="public/IMG_2469.png" as="image"> 
+<link rel="preload" href="public/IMG_0290.jpg" as="image">
+<link rel="preload" href="public/IMG_0291.jpg" as="image">
+<link rel="preload" href="public/IMG_2540.png" as="image">
+<link rel="preload" href="public/IMG_0293.jpg" as="image">
+<link rel="preload" href="public/IMG_2224.png" as="image">
+<link rel="preload" href="public/IMG_0295.jpg" as="image">
+<link rel="preload" href="public/Screenshot 2025-03-12 at 5.15.12 PM.png" as="image">
+<link rel="preload" href="public/Screenshot 2025-03-12 at 5.15.24 PM.png" as="image">
+<link rel="preload" href="public/Screenshot 2025-03-12 at 5.15.39 PM.png" as="image">
+<link rel="preload" href="public/IMG_0289.jpg" as="image">
+
+<link rel="preload" href="public/Flash/IMG_3136.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3135.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3134.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3128.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3133.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3132.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3127.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3131.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3126.jpeg" as="image">
+<link rel="preload" href="public/Flash/IMG_3124.jpeg" as="image">
 
 </body>
 </html>

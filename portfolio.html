@@ -7,11 +7,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="PortfolioNavGrid"> 
+        <div class="headerCont" style="background-color: rgba(0, 0, 0, 0.5) !important;"> 
+                <a href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA==" target="_blank"><img class="bottomLogo" src="IMG_3165.PNG"></a>
+        <div class="logo"><img src="IMG_3161.png" width="100%" ></div> 
+        <button class="menuButton" id="menu-button" onclick=showSidebar()><img src="menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" 
+            width="55"> </button> 
+    <nav class="navBar"> 
+    <ul class="sidebar" id="menu-toggle"> 
+<li onclick="hideSidebar()"><a href="#"><img src="close_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50" width="50"></a></li> 
+<li><a href="/">Home</a></li>
+<li><a href="portfolio.html" style="color: #00b6cf">Portfolio</a></li> 
+<li><a href="flash.html">Flash</a></li> 
+<li><a href="#contact">Art Gallery</a></li> 
+<li><a href="BookingForm.html">Booking Request</a></li>  
+    </ul>
+</nav>
+</div>
+</header> 
+
     <div class="bg-image"></div>
     <div class="imageList" id="gallery">
       <div class="images">
         <div class="productBox">
-          <img src="public/IMG_2469.png" class="resize" />
+          <img src="public/IMG_2469.png" class="resize" class="preload" />
         </div>
         <div class="productBox">
           <img src="public/IMG_0290.jpg" class="resize" />
@@ -93,6 +112,26 @@
           <img src="public/IMG_0314.jpg" class="resize" />
         </div>
       </div>
-    </div>
+    </div> 
+
+    <script> 
+        const sidebar = document.querySelector('.sidebar') 
+        const isVisible = sidebar.style.display === 'flex';
+        
+            function showSidebar(){
+                sidebar.style.display = 'flex' 
+                // document.addEventListener('click', hideSidebar());
+                
+            } 
+        
+            function hideSidebar(){
+                sidebar.style.display = 'none' 
+        
+            }
+        
+          
+        
+        
+        </script>
   </body>
 </html>
