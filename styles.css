@@ -3,6 +3,16 @@
   src: url(MadhouseSans-9LWy.otf);
 }
 
+.MenuItems {
+  /* display: none;   */
+  background-color: black;
+  width: 100%;
+}
+
+.MenuItemsTest {
+  display: none;
+}
+
 .homePageImg {
   display: block;
   margin-left: auto;
@@ -10,11 +20,16 @@
   margin-top: 10%;
 }
 
+.menuButton img {
+  width: 3rem;
+}
+
 .menuButton {
   background: none;
   border: none;
   outline: none;
   box-shadow: none;
+  /* border-radius: 2px;  */
 }
 
 .bottomNavBar a {
@@ -29,7 +44,7 @@
 .bottomNavBar {
   list-style: none;
   font-family: CarliFont;
-  word-spacing: 2px; 
+  word-spacing: 2px;
   gap: 15px;
   color: white;
   letter-spacing: 6px;
@@ -184,11 +199,13 @@ h1:not(.bookNowBottomLink) {
     position: relative;
     height: 111px;
     display: flex;
-    align-items: flex-start;
-    /* padding-left: 25px; */
-    padding-right: 25px;
+    align-items: center;
+    /* padding-left: 25px; 
+    padding-right: 25px; */
     /* padding-bottom: 50px;  */
     padding-bottom: 20%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .navBarItems {
