@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="PortfolioNavGrid">
+      <div
+        class="headerCont"
+        style="background-color: rgba(0, 0, 0, 0.5) !important"
+      >
+        <a
+          href="https://www.instagram.com/carlile.24?igsh=MXJzMzI0cTZnN2dqcA=="
+          target="_blank"
+          ><img class="bottomLogo" src="IMG_3165.PNG"
+        /></a>
+        <div class="logo">
+          <img src="public/Gallery/LogoGallery.png" width="100%" />
+        </div>
+        <button class="menuButton" id="menu-button" onclick="showSidebar()">
+          <img
+            src="menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            width="55"
+          />
+        </button>
+        <nav class="navBar">
+          <ul class="sidebar" id="menu-toggle">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><img
+                  src="close_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+                  height="50"
+                  width="50"
+              /></a>
+            </li>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="flash.html">Flash</a></li>
+            <li>
+              <a href="ArtGallery.html" style="color: #00b6cf">Art Gallery</a>
+            </li>
+            <li><a href="BookingForm.html">Booking Request</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="bg-image"></div>
+    <div class="imageList" id="gallery">
+      <div class="images">
+        <div class="productBox">
+          <img
+            src="public/Gallery/blueFlower.jpeg"
+            class="resize"
+            class="preload"
+          />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/BlueFlowerTwo.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/HalfSword.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Lantern.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Match.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Key.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Lock.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Skull.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Piece.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/BlueFlowerThree.jpeg" class="resize" />
+        </div>
+        <!-- <div class="productBox"> <img src="public/IMG_2469.png" class="resize"></div> -->
+        <div class="productBox">
+          <img src="public/Gallery/Candle.jpeg" class="resize" height="268" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Tooth.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/QuarterSword.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/ThreeSword.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/ThreePaw.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/ThreeCatSushi.jpeg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/Gallery/Moth.jpeg" class="resize" />
+        </div>
+        <!-- <div class="productBox">
+          <img src="public/IMG_0310.jpg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/IMG_0311.jpg" class="resize" />
+        </div>
+        <div class="productBox">
+          <img src="public/IMG_0314.jpg" class="resize" />
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      const isVisible = sidebar.style.display === "flex";
+
+      function showSidebar() {
+        sidebar.style.display = "flex";
+        // document.addEventListener('click', hideSidebar());
+      }
+
+      function hideSidebar() {
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

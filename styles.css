@@ -10,7 +10,9 @@ ul {
 
 .preload {
   background: url(public/IMG_2469.png);
-}
+} 
+
+
 
 .sidebar {
   position: fixed;
@@ -56,8 +58,8 @@ nav li:first-child {
 
 .menuButton {
   background: none;
-  border: none;
-  outline: none; 
+  border: none; 
+  outline: none;   
   box-shadow: none;
   /* border-radius: 2px;  */
 }
